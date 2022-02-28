@@ -48,8 +48,8 @@ h4 {
 /* Styling content */
 
 .container {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   margin: 0 auto;
   text-align: center;
 }
@@ -78,7 +78,7 @@ h4 {
 }
 
 .table {
-  width: 25%;
+  width: 200px;
   height: 90%;
   border-radius: var(--border-radius);
   margin: 0 20px;
@@ -91,7 +91,7 @@ h4 {
 .table:nth-child(2) {
   background-color: var(--primary-color);
   height: 100%;
-  width: 28%;
+  width: 220px;
   color: #fff;
 }
 
@@ -162,4 +162,30 @@ h4 {
 }
 .switch .switch-btn:active {
   left: 50%;
+}
+
+/* Media queries */
+
+@media (max-width: 1200px) {
+  .container {
+    height: auto;
+  }
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+
+  .heading .switch {
+    margin-top: 30px;
+  }
+  .pricing-tables {
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .table {
+    margin-top: 50px;
+  }
 }

@@ -79,11 +79,32 @@ h4 {
 .table {
   width: 190px;
   height: 400px;
-  background: #ccc;
   border-radius: var(--border-radius);
   margin: 0 10px;
   padding: 12px 15px 38px;
   text-align: left;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-color);
+}
+
+.table:nth-child(2) {
+  background-color: var(--primary-color);
+  height: 420px;
+  width: 200px;
+  color: #fff;
+}
+
+.table:nth-child(2) .table-heading {
+  border-bottom: 1px solid var(--background-color);
+}
+
+.table:nth-child(2) .table-heading a {
+  background: var(--background-color);
+  color: var(--primary-color);
+}
+
+.table:nth-child(2) .table-heading h4 {
+  color: var(--background-color);
 }
 
 .table .table-heading {
